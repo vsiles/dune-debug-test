@@ -1,0 +1,14 @@
+(library
+  (name utils_core)
+  (wrapped false)
+  (modules
+    build)
+  (c_names
+    info))
+
+(executable
+  (name main)
+  (modules
+    main)
+  (libraries
+    utils_core))    
