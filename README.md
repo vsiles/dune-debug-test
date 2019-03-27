@@ -26,3 +26,6 @@ Fatal error: cannot load shared library dllutils_core_stubs
 Reason: dlopen(dllutils_core_stubs.so, 10): image not found
 make: *** [all] Error 2
 ```
+
+# Solution
+Adding `ocamlc_flags (:standard -custom)` solves the issue !
